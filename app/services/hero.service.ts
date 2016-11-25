@@ -5,21 +5,24 @@ import 'rxjs/add/operator/toPromise';
 
 import { Hero } from '../core/hero';
 
+//临时停靠，多多关照
+import { HEROES } from '../repository/mock-heroes';
+
 @Injectable()
 export class HeroService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
 
-  //private heroesUrl = 'app/heros';  // URL to web api
-  private heroesUrl = 'http://localhost:27017';
+  private heroesUrl = 'app/heros';  // URL to web api
 
   constructor(private http: Http) { }
 
   getHeroes(): Promise<Hero[]> {
-    return this.http.get(this.heroesUrl)
-               .toPromise()
-               .then(response => response.json().data as Hero[])
-               .catch(this.handleError);
+    // return this.http.get(this.heroesUrl)
+    //            .toPromise()
+    //            .then(response => response.json().data as Hero[])
+    //            .catch(this.handleError);
+    return Promise.resolve(HEROES);
   }
 
   getHero(id: number): Promise<Hero> {
