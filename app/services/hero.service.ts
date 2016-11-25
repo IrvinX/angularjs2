@@ -10,7 +10,8 @@ export class HeroService {
 
   private headers = new Headers({'Content-Type': 'application/json'});
 
-  private heroesUrl = 'app/heros';  // URL to web api
+  //private heroesUrl = 'app/heros';  // URL to web api
+  private heroesUrl = 'http://localhost:27017';
 
   constructor(private http: Http) { }
 
