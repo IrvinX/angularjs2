@@ -4,7 +4,6 @@ import { ActivatedRoute, Params }   from '@angular/router';
 import { Location }                 from '@angular/common';
 
 import { PlayerService } from '../services/player.service';
-import { LeagueService } from '../services/league.service';
 
 import 'rxjs/add/operator/switchMap';
 
@@ -17,14 +16,13 @@ import 'rxjs/add/operator/switchMap';
 export class PlayerDetailComponent implements OnInit {
 
   ngOnInit(): void {
-  this.route.params
-    .switchMap((params: Params) => this.playerService.getPlayer(+params['player_id']))
-    .subscribe(player => this.player = player);
+    this.route.params
+      .switchMap((params: Params) => this.playerService.getPlayer(+params['player_id']))
+      .subscribe(player => this.player = player);
   }
 
   constructor(
     private playerService: PlayerService,
-    private leagueService: LeagueService,
     private route: ActivatedRoute,
     private location: Location
   ) {}
