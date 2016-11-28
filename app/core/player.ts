@@ -1,6 +1,5 @@
 export class Player {
-	id: number;
-    league_id: number;      	//联赛ID
+	league_id: number;      	//联赛ID
  	season_id: number;      	//赛季ID
  	team_id: number;	        //球队ID
  	captain: number;	        //是否队长(1-是，2-否)

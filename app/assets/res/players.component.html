@@ -3,7 +3,7 @@
   <li *ngFor="let player of players"
     [class.selected]="player === selectedPlayer"
     (click)="onSelect(player)">
-    <span class="badge">{{player.id}}</span> {{player.name}}
+    <span class="badge">{{player.player_id}}</span> {{player.name}}
   </li>
 </ul>
 <div *ngIf="selectedPlayer">

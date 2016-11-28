@@ -1,8 +1,7 @@
 import { Player } from '../core/Player';
 
 export const PLAYERS: Player[] = [
-    {   id: 1234,
-        league_id: 128,
+    {   league_id: 128,
         season_id: 2015,
         team_id: 3148,
         captain: 2,
@@ -33,8 +32,7 @@ export const PLAYERS: Player[] = [
         contract_until: "2015-09-01",
         detailed_position: "{\"main_position\":{\"type\":9},\"side_position\":[{\"type\":11},{\"type\":13}]}"        
     },
-    {   id: 1235,
-        league_id: 128,
+    {   league_id: 128,
         season_id: 2015,
         team_id: 3148,
         captain: 2,

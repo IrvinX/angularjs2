@@ -1,9 +1,74 @@
 <div *ngIf="player">
   <h2>{{player.name}} details!</h2>
-  <div><label>id: </label>{{player.id}}</div>
+  <!--<div><label>id: </label>{{player.id}}</div>
   <div>
     <label>name: </label>
     <input [(ngModel)]="player.name" placeholder="name"/>
-  </div>
+  </div>-->
+  <form>
+    <label>name: </label>
+    <input type="text" name="name" [(ngModel)]="player.name" readonly="true"><br>
+
+    <label>league_id: </label>
+    <input type="text" name="league_id" [(ngModel)]="player.league_id" readonly="true"><br>
+
+    <label>season_id: </label>
+    <input type="text" name="season_id" [(ngModel)]="player.season_id" readonly="true"><br>
+
+    <label>team_id: </label>
+    <input type="text" name="team_id" [(ngModel)]="player.team_id" readonly="true"><br>
+
+    <label>captain: </label>
+    <input type="text" name="captain" [(ngModel)]="player.captain" readonly="true"><br>
+
+    <label>team_name: </label>
+    <input type="text" name="team_name" [(ngModel)]="player.team_name" readonly="true"><br>
+
+    <label>known_name: </label>
+    <input type="text" name="known_name" [(ngModel)]="player.known_name" readonly="true"><br>
+
+    <label>birth_date: </label>
+    <input type="text" name="birth_date" [(ngModel)]="player.birth_date" readonly="true"><br>
+
+    <label>age: </label>
+    <input type="text" name="age" [(ngModel)]="player.age" readonly="true"><br>
+
+    <label>first_nationality: </label>
+    <input type="text" name="first_nationality" [(ngModel)]="player.first_nationality" readonly="true"><br>
+
+    <label>weight: </label>
+    <input type="text" name="weight" [(ngModel)]="player.weight" readonly="true"><br>
+
+    <label>height: </label>
+    <input type="text" name="height" [(ngModel)]="player.height" readonly="true"><br>
+
+    <label>jersey_num: </label>
+    <input type="text" name="jersey_num" [(ngModel)]="player.jersey_num" readonly="true"><br>
+
+    <label>real_position: </label>
+    <input type="text" name="real_position" [(ngModel)]="player.real_position" readonly="true"><br>
+
+    <label>join_date: </label>
+    <input type="text" name="join_date" [(ngModel)]="player.join_date" readonly="true"><br>
+
+    <label>country: </label>
+    <input type="text" name="country" [(ngModel)]="player.country" readonly="true"><br>
+
+    <label>preferred_foot: </label>
+    <input type="text" name="preferred_foot" [(ngModel)]="player.preferred_foot" readonly="true"><br>
+
+    <label>worth: </label>
+    <input type="text" name="worth" [(ngModel)]="player.worth" readonly="true"><br>
+
+    <label>description: </label>
+    <input type="text" name="description" [(ngModel)]="player.description" readonly="true"><br>
+
+    <label>market_value: </label>
+    <input type="text" name="market_value" [(ngModel)]="player.market_value" readonly="true"><br>
+
+    <label>contract_until: </label>
+    <input type="text" name="contract_until" [(ngModel)]="player.contract_until" readonly="true"><br>
+
+  </form>
   <button (click)="goBack()">Back</button>
 </div>
