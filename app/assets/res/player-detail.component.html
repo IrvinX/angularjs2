@@ -74,3 +74,8 @@
   </form>
   <button (click)="goBack()">Back</button>
 </div>
+<div *ngIf="league">
+  <select *ngFor="let league of leagues">
+      <option value={{league.league_id}}>{{league_name}}</option>
+    </select>
+</div>
