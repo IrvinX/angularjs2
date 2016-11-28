@@ -6,12 +6,14 @@
     <input [(ngModel)]="player.name" placeholder="name"/>
   </div>-->
   <form>
+    <img src={{player.image_86x120_url}} alt={{player.name}}><br>
+
     <label>name: </label>
     <input type="text" name="name" [(ngModel)]="player.name" readonly="true"><br>
 
     <label>league_id: </label>
     <input type="text" name="league_id" [(ngModel)]="player.league_id" readonly="true"><br>
-
+    
     <label>season_id: </label>
     <input type="text" name="season_id" [(ngModel)]="player.season_id" readonly="true"><br>
 

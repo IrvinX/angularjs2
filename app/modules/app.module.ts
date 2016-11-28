@@ -5,6 +5,7 @@ import { HttpModule }    from '@angular/http';
 
 import { AppRoutingModule }   from './app-routing.module';
 import { PlayerModule } from './player.module';
+import { LeagueModule } from './league.module';
 
 import { AppComponent }        from '../components/app.component';
 import { PlayerDetailComponent }  from '../components/player-detail.component';
@@ -28,7 +29,8 @@ import '../extensions/rxjs-extensions';
     // InMemoryWebApiModule.forRoot(InMemoryDataService),
     HttpModule,
     AppRoutingModule,
-    PlayerModule
+    PlayerModule,
+    LeagueModule
   ],
   declarations: [
     AppComponent,
