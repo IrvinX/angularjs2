@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
   template: `
     <h1>{{title}}</h1>
     <nav>
-     <a routerLink="/dashboard">Dashboard</a>
-     <a routerLink="/heroes">Heroes</a>
+     <a routerLink="/home">Home</a>
+     <a routerLink="/players">Players</a>
     </nav>
     <router-outlet></router-outlet>
   `
   })
 
 export class AppComponent {
-  title = 'Tour of Heroes';
+  title = 'Road to Champion';
 }
