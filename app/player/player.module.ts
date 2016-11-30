@@ -1,9 +1,9 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { PlayersComponent}     from '../components/players.component';
-import { AppComponent }        from '../components/app.component';
-import { PlayerService }       from '../services/player.service';
+import { PlayersComponent}     from './players.component';
+import { AppComponent }        from '../app.component';
+import { PlayerService }       from './player.service';
 
 
 @NgModule({

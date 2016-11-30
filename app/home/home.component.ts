@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Player } from '../core/player';
-import { PlayerService } from '../services/player.service';
+import { Player } from '../player/player';
+import { PlayerService } from '../player/player.service';
 
 @Component({
   moduleId: module.id,
   selector: 'my-home',
-  templateUrl: '../assets/res/home.component.html',
-  styleUrls:['../assets/css/home.component.css']
+  templateUrl: './home.component.html',
+  styleUrls:['./home.component.css']
 })
 
 export class HomeComponent implements OnInit {
