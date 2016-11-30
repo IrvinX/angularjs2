@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { PlayersComponent } from './player/players.component';
 import { PlayerDetailComponent } from './player/player-detail/player-detail.component';
@@ -8,6 +9,7 @@ import { PlayerDetailComponent } from './player/player-detail/player-detail.comp
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },
   { path: 'playerdetail/:player_id', component: PlayerDetailComponent },
   { path: 'players', component: PlayersComponent }

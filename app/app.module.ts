@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PlayerModule } from './player/player.module';
 import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 import { AppComponent } from './app.component';
 
@@ -20,7 +21,8 @@ import './extensions/rxjs-extensions';
     AppRoutingModule,
     PlayerModule,
     HomeModule,
-    LoginModule
+    LoginModule,
+    DashboardModule
   ],
   declarations: [
     AppComponent

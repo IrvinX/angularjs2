@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <nav>
+    <!-- <nav>
      <a routerLink="/home">Home</a>
      <a routerLink="/players">Players</a>
-    </nav>
+    </nav> -->
     <router-outlet></router-outlet>
   `,
   styleUrls: ['./app.component.css']
