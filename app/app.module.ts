@@ -1,14 +1,14 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
-import { HttpModule }    from '@angular/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule }   from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { PlayerModule } from './player/player.module';
+import { HomeModule } from './home/home.module';
+import { LoginModule } from './login/login.module';
 
-import { AppComponent }        from './app.component';
-import { PlayerDetailComponent }  from './player/player-detail/player-detail.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component';
 
 import './extensions/rxjs-extensions';
 
@@ -18,14 +18,14 @@ import './extensions/rxjs-extensions';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    PlayerModule
+    PlayerModule,
+    HomeModule,
+    LoginModule
   ],
   declarations: [
-    AppComponent,
-    HomeComponent,
-    PlayerDetailComponent
+    AppComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
 
 export class AppModule { }
