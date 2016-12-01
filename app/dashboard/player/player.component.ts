@@ -7,11 +7,11 @@ import { PlayerService } from './player.service';
 @Component({
     moduleId: module.id,
     selector: 'my-players',
-    templateUrl: './players.component.html',
-    styleUrls: ['./players.component.css']
+    templateUrl: './player.component.html',
+    styleUrls: ['./player.component.css']
 })
 
-export class PlayersComponent implements OnInit {
+export class PlayerComponent implements OnInit {
 
   players: Player[];
   selectedPlayer: Player;

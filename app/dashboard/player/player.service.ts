@@ -4,7 +4,7 @@ import 'rxjs/add/operator/toPromise';
 
 import { Player } from './player';
 // 临时停靠，多多关照
-import { PLAYERS } from '../repository/mock-players';
+import { PLAYERS } from '../../repository/mock-players';
 
 @Injectable()
 export class PlayerService {

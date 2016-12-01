@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
-import { PlayerModule } from './player/player.module';
-import { HomeModule } from './home/home.module';
+import { PlayerModule } from './dashboard/player/player.module';
+import { HomeModule } from './dashboard/home/home.module';
 import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
 import { AppComponent } from './app.component';
+
+import { ROUTES } from './app.routes';
 
 import './extensions/rxjs-extensions';
 
@@ -18,10 +20,10 @@ import './extensions/rxjs-extensions';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule,
+    LoginModule,
+    RouterModule.forRoot(ROUTES),
     PlayerModule,
     HomeModule,
-    LoginModule,
     DashboardModule
   ],
   declarations: [

@@ -1,4 +1,4 @@
-import { Player } from '../player/player';
+import { Player } from '../dashboard/player/player';
 
 export const PLAYERS: Player[] = [
     {   league_id: 128,
