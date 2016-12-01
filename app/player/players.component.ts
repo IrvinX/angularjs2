@@ -33,7 +33,7 @@ export class PlayersComponent implements OnInit {
   }
 
   gotoDetail(): void {
-    this.router.navigate(['/playerdetail', this.selectedPlayer.player_id]);
+    this.router.navigate(['/dashboard/playerdetail', this.selectedPlayer.player_id]);
   }
 
 }

@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
-// import { HomeModule } from './home/home.module';
+import { HomeComponent } from '../home/home.component';
 // import { BlankPageModule } from './blank-page/blankPage.module';
 // import { BSComponentModule } from './bs-component/bsComponent.module';
 // import { PlayersModule } from './players/players.module';
@@ -13,11 +12,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 @NgModule({
     imports: [
         CommonModule,
-    	RouterModule
+        RouterModule
     ],
-    declarations: [DashboardComponent, SidebarComponent],
+    declarations: [DashboardComponent, SidebarComponent,HomeComponent],
     exports: [DashboardComponent, SidebarComponent]
 })
 
-export class DashboardModule { 
+export class DashboardModule {
 }
