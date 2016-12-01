@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/index';
-import { PlayerComponent } from './player/index';
+
+import { PlayerModule } from './player/player.module';
+import { HomeModule } from './home/home.module';
 
 import { DashboardComponent } from './index';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -10,12 +11,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule
+        RouterModule,
+        PlayerModule,
+        HomeModule
     ],
     declarations: [
         DashboardComponent,
-        SidebarComponent,
-        // HomeComponent
+        SidebarComponent
     ],
     exports: [
         DashboardComponent,

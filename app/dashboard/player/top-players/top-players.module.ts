@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home.component';
-import { AppComponent } from '../../app.component';
+import { TopPlayersComponent } from './top-players.component';
+import { AppComponent } from '../../../app.component';
 
 
 @NgModule({
@@ -11,9 +11,9 @@ import { AppComponent } from '../../app.component';
         BrowserModule,
         RouterModule
     ],
-    declarations: [HomeComponent],
+    declarations: [TopPlayersComponent],
     bootstrap: [AppComponent]
 })
 
-export class HomeModule {
+export class TopPlayersModule {
 }
