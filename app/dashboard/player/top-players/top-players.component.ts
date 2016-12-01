@@ -18,6 +18,6 @@ export class TopPlayersComponent implements OnInit {
 
     ngOnInit(): void {
         this.playerService.getPlayers()
-            .then(players => this.players = players.slice(0, 1));
+            .then(players => this.players = players.slice(0, 3));
     }
 }
