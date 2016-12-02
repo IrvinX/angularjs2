@@ -11,7 +11,7 @@ import 'rxjs/add/operator/switchMap';
   moduleId: module.id,
   selector: 'my-player-detail',
   templateUrl: './player-detail.component.html',
-  styleUrls:['./player-detail.component.css']
+  // styleUrls:['./player-detail.component.css']
 })
 export class PlayerDetailComponent implements OnInit {
 

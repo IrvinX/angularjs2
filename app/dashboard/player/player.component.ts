@@ -8,7 +8,7 @@ import { PlayerService } from './player.service';
     moduleId: module.id,
     selector: 'my-players',
     templateUrl: './player.component.html',
-    styleUrls: ['./player.component.css']
+    // styleUrls: ['./player.component.css']
 })
 
 export class PlayerComponent implements OnInit {
