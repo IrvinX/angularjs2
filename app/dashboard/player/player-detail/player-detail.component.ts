@@ -1,7 +1,7 @@
 import { Player } from '../player';
 import { Component, Input, OnInit, AfterViewInit } from '@angular/core';
-import { ActivatedRoute, Params }   from '@angular/router';
-import { Location }                 from '@angular/common';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { PlayerService } from '../player.service';
 
@@ -25,10 +25,15 @@ export class PlayerDetailComponent implements OnInit {
     private playerService: PlayerService,
     private route: ActivatedRoute,
     private location: Location
-  ) {}
+  ) { }
 
   @Input()
   player: Player;
+
+  save(): void {
+    this.playerService.update(this.player)
+      .then(() => this.goBack());
+  }
 
   goBack(): void {
     this.location.back();
