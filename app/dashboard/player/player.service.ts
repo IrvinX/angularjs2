@@ -35,7 +35,6 @@ export class PlayerService {
   }
 
   update(player: Player): Promise<Player> {
-    debugger;
     const url = `${this.playersUrl}/${player.id}`;
     return this.http
       .put(url, JSON.stringify(player), { headers: this.headers })
