@@ -5,9 +5,10 @@ import { TopPlayersModule } from './top-players/top-players.module';
 
 import { PlayerComponent } from './player.component';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { PlayerSearchComponent } from './player-search/index';
 import { AppComponent } from '../../app.component';
 import { PlayerService } from './player.service';
-
+import { PlayerSearchService } from './player-search/index';
 
 @NgModule({
     imports: [
@@ -18,11 +19,13 @@ import { PlayerService } from './player.service';
 
     declarations: [
         PlayerComponent,
-        PlayerDetailComponent
+        PlayerDetailComponent,
+        PlayerSearchComponent
     ],
 
     providers: [
-        PlayerService
+        PlayerService,
+        PlayerSearchService
     ],
 
     bootstrap: [

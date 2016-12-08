@@ -4,6 +4,7 @@ import { HomeRoutes } from './home/index';
 import { PlayerRoutes } from './player/index';
 import { PlayerDetailRoutes } from './player/player-detail/index';
 import { TopPlayersRoutes } from './player/top-players/index';
+import { PlayerSearchRoutes } from './player/player-search/index';
 
 import { PlayerDetailComponent } from './player/player-detail/player-detail.component';
 import { DashboardComponent } from './index';
@@ -16,7 +17,8 @@ export const DashboardRoutes: Route[] = [
 	    	...HomeRoutes,
             ...PlayerRoutes,
             ...PlayerDetailRoutes,
-            ...TopPlayersRoutes
+            ...TopPlayersRoutes,
+			...PlayerSearchRoutes
     	]
   	}
 ];

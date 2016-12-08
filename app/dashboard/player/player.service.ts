@@ -44,31 +44,20 @@ export class PlayerService {
       .catch(this.handleError);
   }
 
+  create(name: string): Promise<Player> {
+    return this.http
+      .post(this.playersUrl, JSON.stringify({ name: name }), { headers: this.headers })
+      .toPromise()
+      .then(res => res.json().data)
+      .catch(this.handleError);
+  }
+
+  delete(id: number): Promise<void> {
+    const url = `${this.playersUrl}/${id}`;
+    return this.http.delete(url, { headers: this.headers })
+      .toPromise()
+      .then(() => null)
+      .catch(this.handleError);
+  }
+
 }
-
-
-
-
-
-//----------------------------原始代码-----------------------------
-// import { Injectable }    from '@angular/core';
-
-// import 'rxjs/add/operator/toPromise';
-
-// import { Player } from './player';
-// // 临时停靠，多多关照
-// import { PLAYERS } from '../../repository/mock-players';
-
-// @Injectable()
-// export class PlayerService {
-
-//   getPlayers(): Promise<Player[]> {
-//     return Promise.resolve(PLAYERS);
-//   }
-
-//   getPlayer(id: number): Promise<Player> {
-//     return this.getPlayers()
-//                .then(players => players.find(player => player.id === id));
-//   }
-// }
-//--------------------------原始代码结束----------------------------
