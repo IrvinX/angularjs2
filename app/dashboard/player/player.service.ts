@@ -29,14 +29,14 @@ export class PlayerService {
       .catch(this.handleError);
   }
 
-  getPlayer(player_id: number): Promise<Player> {
+  getPlayer(id: number): Promise<Player> {
     return this.getPlayers()
-      .then(players => players.find(player => player.player_id === player_id));
+      .then(players => players.find(player => player.id === id));
   }
 
   update(player: Player): Promise<Player> {
     debugger;
-    const url = `/dashboard/detail/${player.player_id}`;
+    const url = `${this.playersUrl}/${player.id}`;
     return this.http
       .put(url, JSON.stringify(player), { headers: this.headers })
       .toPromise()
@@ -66,9 +66,9 @@ export class PlayerService {
 //     return Promise.resolve(PLAYERS);
 //   }
 
-//   getPlayer(player_id: number): Promise<Player> {
+//   getPlayer(id: number): Promise<Player> {
 //     return this.getPlayers()
-//                .then(players => players.find(player => player.player_id === player_id));
+//                .then(players => players.find(player => player.id === id));
 //   }
 // }
 //--------------------------原始代码结束----------------------------

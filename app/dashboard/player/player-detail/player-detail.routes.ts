@@ -3,7 +3,7 @@ import { PlayerDetailComponent } from './player-detail.component';
 
 export const PlayerDetailRoutes: Route[] = [
   	{
-    	path: 'detail/:player_id',
+    	path: 'detail/:id',
     	component: PlayerDetailComponent,
         children:[
 

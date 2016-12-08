@@ -1,6 +1,6 @@
 <h3>Top Players</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let player of players" [routerLink]="['/dashboard/detail', player.player_id]" class="col-1-4">
+  <a *ngFor="let player of players" [routerLink]="['/dashboard/detail', player.id]" class="col-1-4">
     <div class="module player">
       <h4>{{player.name}}</h4>
     </div>
