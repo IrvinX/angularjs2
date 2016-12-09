@@ -2,9 +2,11 @@
   <h4>Player Search</h4>
   <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
   <div>
-    <div *ngFor="let player of players | async"
+    <ul>
+    <li *ngFor="let player of players | async"
          (click)="gotoDetail(player)" class="search-result" >
-      {{player.name}}
-    </div>
+      <a><span>{{player.name}}</span></a>
+    </li>
+    </ul>
   </div>
 </div>

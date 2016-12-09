@@ -1,4 +1,4 @@
-<h2>My Players</h2>
+<h3>My Players</h3>
 <ul class="players">
   <li *ngFor="let player of players" [class.selected]="player === selectedPlayer" (click)="onSelect(player)">
     <span class="badge">{{player.id}}</span> {{player.name}}
