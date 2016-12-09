@@ -6,13 +6,16 @@ import { RouterModule } from '@angular/router';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './repository/in-memory-data.service';
+import { InMemoryDataService } from './repository/in-memory-data.service';
 
 import { LoginModule } from './login/login.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 
+import { Logger } from './logger.service';
+
+import { ROUTES } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { ROUTES } from './app.routes';
 
 import './extensions/rxjs-extensions';
 
@@ -28,6 +31,9 @@ import './extensions/rxjs-extensions';
   ],
   declarations: [
     AppComponent
+  ],
+  providers: [
+    Logger
   ],
   bootstrap: [AppComponent]
 })
